@@ -12,13 +12,16 @@ Simultaneously, the following challenges made development less than linear:
 - Another resulting consequence of the time constraint was that, testing was limited to simpler scenarios in order to make savings on time.
 
 ## Endpoints
+
 1. **/airport/flights/:ident/:direction/:time** : Returns a list of flights for an airport, direction and time. The list is sorted ascending by scheduled departure time for direction=="departure" and sorted descending by scheduled arrival time for direction=="arrival".
 The next departure/arrival time is returned for pagination.The dates returned for each flight represent the scheduled departure date in local time.
 
     *Parameters*
    
    - ident(string) - Ident of the airport to request. Ident is the unique identifier,  as returned by /airport/info endpoints.
-   - direction(string) - Direction, one of "arrival" or "departure",
+     
+   - direction(string) - Direction, one of "arrival" or "departure".
+     
    - time(string) - Timestamp in UTC(Format: '2023-08-12T12:00:00.000Z'). If direction is "arrival", show flights with scheduled arrival time prior to this timestamp. If direction is "departure", show flights with scheduled departure time after this timestamp.
      
 2. **/airport/info/:iata** : Returns detailed airport information for airports identified by the provided IATA. In most cases the list should contain only one entry.
