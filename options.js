@@ -8,8 +8,8 @@ const flight_statistics = {
     */
     params: {flnr: ''},
     headers: {
-      'X-RapidAPI-Key': process.env.X-RapidAPI-Key || 'bb44c604a8msh9debebb212fd32ap11844bjsna5a52ed28bb0',
-      'X-RapidAPI-Host': process.env.X-RapidAPI-Host || 'flightera-flight-data.p.rapidapi.com'
+      'X-RapidAPI-Key': process.env.X-RapidAPI-Key ,
+      'X-RapidAPI-Host': process.env.X-RapidAPI-Host
     }
   };
 
@@ -21,8 +21,8 @@ const flight_info = {
     */
     params: {flnr: ''},
     headers: {
-        'X-RapidAPI-Key': process.env.X-RapidAPI-Key || 'bb44c604a8msh9debebb212fd32ap11844bjsna5a52ed28bb0',
-        'X-RapidAPI-Host': process.env.X-RapidAPI-Host || 'flightera-flight-data.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.X-RapidAPI-Key ,
+        'X-RapidAPI-Host': process.env.X-RapidAPI-Host 
     }
   };
 const flight_search = {
@@ -31,10 +31,10 @@ const flight_search = {
     /*
         flnr(string) - The flight number to request
     */
-    params: {flnr: '<REQUIRED>'},
+    params: {flnr: ''},
     headers: {
-        'X-RapidAPI-Key': process.env.X-RapidAPI-Key || 'bb44c604a8msh9debebb212fd32ap11844bjsna5a52ed28bb0',
-        'X-RapidAPI-Host': process.env.X-RapidAPI-Host || 'flightera-flight-data.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.X-RapidAPI-Key ,
+        'X-RapidAPI-Host': process.env.X-RapidAPI-Host 
     }
   };
 
@@ -46,8 +46,8 @@ const airport_info = {
     */
     params: {iata: ''},
     headers: {
-        'X-RapidAPI-Key': process.env.X-RapidAPI-Key || 'bb44c604a8msh9debebb212fd32ap11844bjsna5a52ed28bb0',
-        'X-RapidAPI-Host': process.env.X-RapidAPI-Host || 'flightera-flight-data.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.X-RapidAPI-Key ,
+        'X-RapidAPI-Host': process.env.X-RapidAPI-Host 
     }
 }
 
@@ -65,8 +65,8 @@ const airport_flights = {
       time: ''
     },
     headers: {
-        'X-RapidAPI-Key': process.env.X-RapidAPI-Key || 'bb44c604a8msh9debebb212fd32ap11844bjsna5a52ed28bb0',
-        'X-RapidAPI-Host': process.env.X-RapidAPI-Host || 'flightera-flight-data.p.rapidapi.com'
+        'X-RapidAPI-Key': process.env.X-RapidAPI-Key ,
+        'X-RapidAPI-Host': process.env.X-RapidAPI-Host 
     }
   };
 
