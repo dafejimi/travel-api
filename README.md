@@ -21,7 +21,7 @@ The next departure/arrival time is returned for pagination.The dates returned fo
    - direction(string) - Direction, one of "arrival" or "departure",
    - time(string) - Timestamp in UTC(Format: '2023-08-12T12:00:00.000Z'). If direction is "arrival", show flights with scheduled arrival time prior to this timestamp. If direction is "departure", show flights with scheduled departure time after this timestamp.
      
-3. **/airport/info/:iata** : Returns detailed airport information for airports identified by the provided IATA. In most cases the list should contain only one entry.
+2. **/airport/info/:iata** : Returns detailed airport information for airports identified by the provided IATA. In most cases the list should contain only one entry.
 However, due to the nature of the data, it is possible that multiple entries are returned.
 
    *Parameters*
