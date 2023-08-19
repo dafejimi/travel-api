@@ -1,0 +1,5 @@
+# don't push the environment vars!
+.env
+
+#packages
+node_modules
