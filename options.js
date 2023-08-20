@@ -1,6 +1,6 @@
 require("dotenv").config()
 
-const flight_statistics = {
+let flight_statistics = {
     method: 'GET',
     url: 'https://flightera-flight-data.p.rapidapi.com/flight/statistics',
     /*
@@ -13,7 +13,7 @@ const flight_statistics = {
     }
   };
 
-const flight_info = {
+let flight_info = {
     method: 'GET',
     url: 'https://flightera-flight-data.p.rapidapi.com/flight/info',
     /*
@@ -25,7 +25,8 @@ const flight_info = {
         'X-RapidAPI-Host': process.env.X-RapidAPI-Host 
     }
   };
-const flight_search = {
+
+let flight_search = {
     method: 'GET',
     url: 'https://flightera-flight-data.p.rapidapi.com/flight/search',
     /*
@@ -38,7 +39,7 @@ const flight_search = {
     }
   };
 
-const airport_info = {
+let airport_info = {
     method: 'GET',
     url: 'https://flightera-flight-data.p.rapidapi.com/airport/info',
     /*
@@ -51,7 +52,7 @@ const airport_info = {
     }
 }
 
-const airport_flights = {
+let airport_flights = {
     method: 'GET',
     url: 'https://flightera-flight-data.p.rapidapi.com/airport/flights',
     /*
